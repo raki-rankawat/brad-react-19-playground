@@ -20,24 +20,16 @@ const JokeItem = () => {
   const joke = use(getJokePromise())
 
   return (
-    <Suspense
-      fallback={
-        <h2 className='text-2xl text-center font-bold mt-5'>Loading...</h2>
-      }
-    >
-      <div className='bg-violet-50 shadow-md p-4 my-4 rounded-lg'>
-        <h2 className='text-xl font-bold'>{joke.value}</h2>
-      </div>
-    </Suspense>
+    <div className='bg-violet-50 shadow-md p-4 my-4 rounded-lg'>
+      <h2 className='text-xl font-bold'>{joke.value}</h2>
+    </div>
   )
 }
 
 const Joke = () => {
   return (
     <Suspense
-      fallback={
-        <h2 className='text-2xl text-center font-bold mt-5'>Loading...</h2>
-      }
+      fallback={<h2 className='text-2xl text-center font-bold'>Loading...</h2>}
     >
       <JokeItem />
     </Suspense>

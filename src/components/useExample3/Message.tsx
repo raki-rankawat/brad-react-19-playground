@@ -10,12 +10,12 @@ type MessageProps = {
 
 const MessageOutput = ({ messagePromise }: MessageProps) => {
   const messageContent = use(messagePromise)
-  return <p className='mt-4'>Here is the message: {messageContent}</p>
+  return <p>Here is the message: {messageContent}</p>
 }
 
 const MessageContainer = ({ messagePromise }: MessageProps) => {
   return (
-    <Suspense fallback={<p className='mt-4'>⌛ Downloading message...</p>}>
+    <Suspense fallback={<p>⌛ Downloading message...</p>}>
       <MessageOutput messagePromise={messagePromise} />
     </Suspense>
   )
@@ -23,7 +23,7 @@ const MessageContainer = ({ messagePromise }: MessageProps) => {
 
 const Message = () => {
   const [messagePromise, setMessagePromise] = useState<Promise<string> | null>(
-    null
+    null,
   )
   const [show, setShow] = useState(false)
 
@@ -38,7 +38,7 @@ const Message = () => {
     return (
       <button
         onClick={download}
-        className='bg-violet-500 hover:bg-violet-700 text-gray-100 mt-4 p-2 rounded block'
+        className='bg-violet-500 hover:bg-violet-700 text-gray-100 p-2 rounded block'
       >
         Download message
       </button>
