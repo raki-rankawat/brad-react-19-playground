@@ -14,7 +14,7 @@ const Layout = () => {
 
       <main className='max-w-2xl mx-auto px-4'>
         {!isHome ? (
-          <NavLink to='/' className='font-bold text-blue-800'>
+          <NavLink to='/' className='font-bold text-violet-800'>
             Back
           </NavLink>
         ) : (

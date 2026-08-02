@@ -25,6 +25,16 @@ const Home = () => {
             View
           </NavLink>
         </li>
+
+        <li className='bg-blue-50 p-4 rounded shadow my-5'>
+          <h4 className='text-2xl font-bold'>use() Hook Example 3:</h4>
+          <p className='my-2'>
+            Use the `use()` hook to resolve a message from a promise and show it
+          </p>
+          <NavLink to='/use-example-3' className='font-bold text-blue-800'>
+            View
+          </NavLink>
+        </li>
       </ul>
     </>
   )
