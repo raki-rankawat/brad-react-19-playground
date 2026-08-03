@@ -52,6 +52,17 @@ const Home = () => {
           desc='Use an action to add product to cart via form'
           url='/action-example-2'
         />
+        <ListItem
+          title='useFormStatus Example'
+          desc='Use the useFormStatus hook to get status of post form submission'
+          url='/useformstatus-example'
+        />
+        <ListItem
+          title='useFormState Example'
+          desc='Use the useFormState Hook to show specific messages for cart
+                items'
+          url='/useformstate-example'
+        />
       </ul>
     </>
   )
