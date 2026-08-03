@@ -23,24 +23,29 @@ const Home = () => {
     <>
       <ul>
         <ListItem
-          title='use() Hook Example 1:'
+          title='use() Hook Example 1'
           desc='Use the `use()` hook to fetch a random joke from the Chuck Norris API'
           url='/use-example-1'
         />
         <ListItem
-          title='use() Hook Example 2:'
+          title='use() Hook Example 2'
           desc='Use the `use()` hook to fetch some posts from the JSONPlaceholder API'
           url='/use-example-2'
         />
         <ListItem
-          title='use() Hook Example 3:'
+          title='use() Hook Example 3'
           desc='Use the `use()` hook to resolve a message from a promise and show it'
           url='/use-example-3'
         />
         <ListItem
-          title='use() Hook Example 4:'
+          title='use() Hook Example 4'
           desc='Use the `use()` hook to apply aa theme context'
           url='/use-example-4'
+        />
+        <ListItem
+          title='Action Example 1'
+          desc='Use action to submit a post form'
+          url='/action-example-1'
         />
       </ul>
     </>
