@@ -64,8 +64,13 @@ const Home = () => {
         />
         <ListItem
           title='useOptimisitc Example'
-          desc=' Use the useOptimistic hook to show a message before the server responds'
+          desc='Use the useOptimistic hook to show a message before the server responds'
           url='/useoptimistic-example'
+        />
+        <ListItem
+          title='useTransition Example'
+          desc='Use the useTransition hook to show a message before the server responds'
+          url='/usetransition-example'
         />
       </ul>
     </>
