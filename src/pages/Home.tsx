@@ -59,9 +59,13 @@ const Home = () => {
         />
         <ListItem
           title='useFormState Example'
-          desc='Use the useFormState Hook to show specific messages for cart
-                items'
+          desc='Use the useFormState Hook to show specific messages for cart items'
           url='/useformstate-example'
+        />
+        <ListItem
+          title='useOptimisitc Example'
+          desc=' Use the useOptimistic hook to show a message before the server responds'
+          url='/useoptimistic-example'
         />
       </ul>
     </>

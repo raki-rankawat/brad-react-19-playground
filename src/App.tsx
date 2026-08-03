@@ -8,6 +8,7 @@ import { ActionExample1 } from './components/actionExample1/Posts'
 import { ActionExample2 } from './components/actionExample2/ShoppingCart'
 import { UseFormStatus } from './components/useFormStatusExample/Posts'
 import { Useformstate } from './components/useFormStateExample/AddToCartForm'
+import { UseOptimisticExample } from './components/useOptimisticExample/Message'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 
@@ -24,6 +25,10 @@ function App() {
         <Route path='action-example-2' element={<ActionExample2 />} />
         <Route path='useFormStatus-example' element={<UseFormStatus />} />
         <Route path='useformstate-example' element={<Useformstate />} />
+        <Route
+          path='useoptimistic-example'
+          element={<UseOptimisticExample />}
+        />
         <Route path='*' element={<NotFound />} />
       </Route>
     </Routes>
