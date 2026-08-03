@@ -47,6 +47,11 @@ const Home = () => {
           desc='Use action to submit a post form'
           url='/action-example-1'
         />
+        <ListItem
+          title='Action Example 2'
+          desc='Use an action to add product to cart via form'
+          url='/action-example-2'
+        />
       </ul>
     </>
   )
